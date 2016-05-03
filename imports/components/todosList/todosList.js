@@ -1,15 +1,15 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
-import Template from './todosList.html';
+import template from './todosList.html';
 
 class TodosListCtrl {
-  contructor() {
+  constructor() {
     this.tasks = [{
       text: 'This is task 1'
     }, {
       text: 'This is task 2'
     }, {
-      text: 'This is task 2'
+      text: 'This is task 3'
     }];
   }
 }
