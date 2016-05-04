@@ -10,7 +10,11 @@ class TodosListCtrl {
 
     this.helpers({
       tasks() {
-        return Tasks.find({});
+        return Tasks.find({}, {
+          sort: {
+            createdAt: -1
+          }
+        });
       }
     })
   }
