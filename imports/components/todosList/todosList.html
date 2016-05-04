@@ -7,7 +7,10 @@
 </header>
 
 <ul>
-  <li ng-repeat="task in $ctrl.tasks">
-    {{task.text}}
+  <li ng-repeat="task in $ctrl.tasks" ng-class="{'checked': task.checked}">
+    <button type="checkbox" ng-checked="task.checked" ng-click="$ctrl.setChecked(task)" class="toggle-checked">&times;</button>
+    <span class="text">
+      {{task.text}}
+    </span>
   </li>
 </ul>
